@@ -1,0 +1,108 @@
+.container3{
+    background-image: url('./Images/pic3.png'); 
+}
+@media not all and (min-width: 640px) {
+    .container3{
+        height: 50vh;
+    }
+}
+@media (min-width: 310px) and (max-width: 480px){
+    .container1{
+        height: 26vh !important;
+    }
+    .circle{
+        display: none !important;
+    }
+    .arrow{
+        display: none !important;
+    }
+    .container2{
+        height: 26vh !important;
+        margin-top: -1.3rem;
+    }
+    .container3{
+        height: 26vh;
+        margin-top: -1.3rem !important;
+    }
+    .container4{
+        margin-top: -1.3rem !important;
+        height: 25vh !important;
+    }
+    .text-white i{
+        font-size: 14px;
+    }
+    .container1 .content .container{
+        margin-top: 0.5rem;
+    }
+    .container1 .img{
+        margin-top: 1.75rem !important;
+    }
+    .container1 .img img{
+        width: 50%;
+    }
+    .heading{
+        margin-top: 14% !important;
+        line-height: 18px ;
+    }
+    .our{
+        font-size: 10px !important;
+    }
+    .services{
+        margin-top: 4px;
+        font-size: 16px !important;
+    }
+    .para{
+        margin-top: 0.5rem !important;
+        font-size: 8px !important;
+        line-height: 10px !important;
+    }
+    .service{
+        display: none !important;
+    }
+    .our-h{
+        font-size: 12px !important;
+    }
+    .port-h{
+        font-size: 16px !important;
+        margin-top: 4px !important;
+    }
+    .portfolio{
+        margin-top: 20px !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+    }
+    .portfolio1{
+        width: 30% !important;
+    }
+    .portfolio2{
+        width: 30% !important;
+    }
+    .shape{
+        height: 1rem !important;
+    }
+    .shape p{
+        font-size: 6px !important;
+    }
+    .about{
+        font-size: 10px !important;
+    }
+    .web{
+        font-size: 14px !important;
+        margin-top: 4px !important;
+    }
+    .paragraph{
+        margin-top: 6px;
+    }
+    .paragraph p{
+        display: none !important;
+    }
+    .paragraph button{
+        margin-top: 0px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        font-size: 6px !important;
+    }
+    .logos img{
+        width: 40% !important;
+    }
+}

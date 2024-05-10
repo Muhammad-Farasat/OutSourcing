@@ -12,9 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@500&family=Raleway:ital,wght@0,100..900;1,100..900&family=Trocchi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+        window.tailwind.config = {
             theme: {
                 extend: {
                     colors: {
@@ -31,13 +32,13 @@
 </head>
 
 <body class="m-0 p-0 font-raleway">
-    <div class="main max-sm:w-full max-md:w-full">
 
+    <div class="main">
 
-        <div class="container1 bg-[url('./pic1.png')] bg-cover bg-center flex flex-col relative max-sm:w-full max-sm:h-[375px] max-sm:bg-[100% 100%] max-md:w-full max-md:h-[456px] max-md:bg-[100% 100%] ">
+        <div class="container1 bg-[url('./Images/pic1.png')] bg-cover bg-center flex flex-col relative max-sm:bg-[100% 100%] max-md:w-full max-md:h-[456px] max-md:bg-[100% 100%] ">
 
             <div class="content flex justify-center ">
-                <div class="w-[1172px] max-sm:w-[430px] max-md:w-[680px] max-lg:w-[930px] flex justify-between mt-6 max-sm:justify-between">
+                <div class="container flex justify-between items-center mt-6">
 
                     <div class="left flex text-white gap-x-2 max-sm:hidden max-md:hidden">
                         <div
@@ -54,8 +55,8 @@
                         </div>
                     </div>
 
-                    <div class="logo flex max-sm:items-start max-sm:w-40 max-md:w-52">
-                        <img src="./Logo.png" alt="">
+                    <div class="logo flex max-sm:items-start max-sm:w-[40%] max-md:w-52">
+                        <img src="./Images/Logo.png" alt="">
                     </div>
 
                     <div class="text-white text-xl hidden max-sm:block max-sm:z-[4] max-md:block max-md:text-2xl max-md:z-[8]">
@@ -63,7 +64,7 @@
                     </div>
 
                     <div class="relist hidden absolute top-0 right-0 ">
-                        <ul class="bg-white h-96 w-52 pt-16 flex flex-col gap-y-2 pl-4 rounded-l-2xl max-md:w-[27rem] max-md:h-[40rem] max-md:pl-12 max-md:gap-y-6">
+                        <ul class="bg-white h-96 max-sm:w-[13rem] pt-16 flex flex-col gap-y-2 max-sm:pl-4 rounded-l-2xl max-md:w-[27rem] max-md:h-[40rem] max-md:pl-12 max-md:gap-y-6">
                             <li> <a href="#" class="text-[#c11fec]">Home</a></li>
                             <li> <a href="#" class="hover:text-[#c11fec]">About us</a></li>
                             <li> <a href="#" class="hover:text-[#c11fec]">Services</a></li>
@@ -72,6 +73,8 @@
                             <li> <a href="#" class="hover:text-[#c11fec]">Price</a></li>
                             <li> <a href="#" class="hover:text-[#c11fec]">Templates</a></li>
                             <li> <a href="#" class="hover:text-[#c11fec]">Designing</a></li>
+                            <li> <a href="#" class="hover:text-[#c11fec]">Development</a></li>
+                            <li> <a href="#" class="hover:text-[#c11fec]">Contact us</a></li>
                         </ul>
                     </div>
 
@@ -93,8 +96,8 @@
 
            
             <div class="list text-white flex justify-center max-sm:hidden max-md:hidden">
-                <div class=" w-[1172px] max-lg:w-[930px]">
-                    <ul class="flex justify-center gap-x-[5.4rem] max-lg:gap-x-[3.2rem]">
+                <div class=" container max-lg:w-auto">
+                    <ul class="flex justify-between">
                         <li> <a href="#" class="text-[#c11fec]">Home</a></li>
                         <li> <a href="#" class="hover:text-[#c11fec]">About us</a></li>
                         <li> <a href="#" class="hover:text-[#c11fec]">Services</a></li>
@@ -103,14 +106,16 @@
                         <li> <a href="#" class="hover:text-[#c11fec]">Price</a></li>
                         <li> <a href="#" class="hover:text-[#c11fec]">Templates</a></li>
                         <li> <a href="#" class="hover:text-[#c11fec]">Designing</a></li>
+                        <li> <a href="#" class="hover:text-[#c11fec]">Development</a></li>
+                        <li> <a href="#" class="hover:text-[#c11fec]">Contact us</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="line border-b-2 border-[#fff] w-full mt-4 mb-4 max-sm:hidden max-md:hidden"></div>
 
-            <div class="flex justify-center mt-52 max-sm:mt-20 max-md:mt-20">
-                <img src="./B-image.png" alt="" class="max-sm:w-60 max-md:w-96 max-lg:w-[70%]">
+            <div class="img flex justify-center mt-52 max-sm:mt-20 max-md:mt-20">
+                <img src="./Images/B-image.png" alt="" class="max-sm:w-60 max-md:w-96 max-lg:w-[70%]">
             </div>
 
             <div class="circle flex justify-center gap-x-4 mt-48 max-sm:mt-32 max-md:mt-32">
@@ -126,43 +131,43 @@
         </div>
 
 
-        <div class="container2 bg-[url('./pic2.png')] bg-cover bg-center overflow-hidden flex flex-col mt-[-7rem] max-sm:w-full max-sm:h-[1000px] max-sm:bg-[100% 100%] max-sm:mt-[-2.4rem] max-lg:bg-[100% 100%] max-lg:w-full">
-            <div class="content flex justify-center ">
-                <div class="w-[1172px] max-sm:w-[444px] max-md:w-[680px] max-lg:w-[930px]">
+        <div class="container2 bg-[url('./Images/pic2.png')] bg-cover h-auto bg-center overflow-hidden flex flex-col mt-[-7rem] max-sm:w-full  max-sm:bg-[100% 100%] max-sm:mt-[-2.4rem] max-lg:bg-[100% 100%] max-lg:w-full">
+            <div class="content flex justify-center">
+                <div class="container">
                     <div class="heading text-center mt-40 max-sm:mt-20">
-                        <h4 class="font-medium text-[24px] leading-[0] max-sm:text-[18px]">OUR</h4>
-                        <h4 class="text-[#c11fec] font-semibold text-[42px] max-sm:text-[24px]">SERVICES</h4>
+                        <h4 class="font-medium text-[24px] leading-[0] max-sm:text-[18px] our">OUR</h4>
+                        <h4 class="text-[#c11fec] font-semibold text-[42px] max-sm:text-[24px] services">SERVICES</h4>
                     </div>
                     <div class="para text-[18px] mt-[72px] text-center max-sm:mt-8 max-sm:text-xs">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada metus felis, vel malesuada dui <br> ullamcorper sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin tempus velit sit amet iaculis <br> dignissim. Nullam vel eros nibh. Nulla rutrum mattis libero, et rhoncus dolor tempus nec</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada metus felis, vel malesuada dui <br class="max-sm:hidden"> ullamcorper sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin tempus velit sit amet iaculis <br class="max-sm:hidden"> dignissim. Nullam vel eros nibh. Nulla rutrum mattis libero, et rhoncus dolor tempus nec</p>
                     </div>
-                    <div class="services flex justify-between mt-[42px] mb-52 max-sm:flex-wrap max-sm:gap-y-6 max-sm:justify-center max-sm:gap-x-12 max-md:flex-wrap max-md:gap-y-6 max-md:justify-center max-md:gap-x-12 max-lg:flex-wrap max-lg:gap-y-6 max-lg:justify-center max-lg:gap-x-12">
+                    <div class="service flex justify-between mt-[42px] mb-52 max-sm:flex-wrap max-sm:gap-y-6 max-sm:justify-center max-sm:gap-x-12 max-md:flex-wrap max-md:gap-y-6 max-md:justify-center max-md:gap-x-12 max-lg:flex-wrap max-lg:gap-y-6 max-lg:justify-center max-lg:gap-x-12">
                         <div class="s1 w-[188px] flex flex-col items-center text-center gap-y-8 max-sm:gap-y-2">
-                            <img src="./S5.png" alt="" class="max-sm:w-12">
+                            <img src="./Images/S5.png" alt="" class="max-sm:w-12">
                             <h2 class="text-[18px] font-bold leading-6 max-sm:text-[12px]">WEB APPLICATIONS DEVELOPMENT</h2>
                             <p class="text-[13px]">Cras quis lectus sit amet quam <br> imperdiet luctus. Sed nulla nisi, <br> convallis sed lorem ut.</p>
                             <button class="text-[#ff7125] text-[12px] font-semibold">READ MORE</button>
                         </div>
                         <div class="s2 w-[188px] flex flex-col items-center text-center gap-y-8 max-sm:gap-y-2 ">
-                            <img src="./S2.png" alt="" class="max-sm:w-12">
+                            <img src="./Images/S4.png" alt="" class="max-sm:w-12">
                             <h2 class="text-[18px] font-bold leading-6 max-sm:text-[12px]">WEB <br> DESIGNING</h2>
                             <p class="text-[13px]">Cras quis lectus sit amet quam <br> imperdiet luctus. Sed nulla nisi, <br> convallis sed lorem ut.</p>
-                            <button class="text-[#00b7d9] text-[12px] font-semibold">READ MORE</button>
+                            <button class="text-[#00c794] text-[12px] font-semibold">READ MORE</button>
                         </div>
                         <div class="s3 w-[188px] flex flex-col items-center text-center gap-y-8 max-sm:gap-y-2 ">
-                            <img src="./S3.png" alt="" class="max-sm:w-12">
+                            <img src="./Images/S3.png" alt="" class="max-sm:w-12">
                             <h2 class="text-[18px] font-bold leading-6 max-sm:text-[12px]">AFFORDABLE SEO SERVICE</h2>
                             <p class="text-[13px]">Cras quis lectus sit amet quam <br> imperdiet luctus. Sed nulla nisi, <br> convallis sed lorem ut.</p>
                             <button class="text-[#dc5194] text-[12px] font-semibold">READ MORE</button>
                         </div>
                         <div class="s4 w-[188px] flex flex-col items-center text-center gap-y-8 max-sm:gap-y-2 ">
-                            <img src="./S4.png" alt="" class="max-sm:w-12">
+                            <img src="./Images/S2.png" alt="" class="max-sm:w-12">
                             <h2 class="text-[18px] font-bold leading-6 max-sm:text-[12px]">E-COMMERCE SOLUTION</h2>
                             <p class="text-[13px]">Cras quis lectus sit amet quam <br> imperdiet luctus. Sed nulla nisi, <br> convallis sed lorem ut.</p>
-                            <button class="text-[#00c794] text-[12px] font-semibold">READ MORE</button>
+                            <button class="text-[#00b7d9] text-[12px] font-semibold">READ MORE</button>
                         </div>
                         <div class="s5 w-[228px] flex flex-col items-center text-center gap-y-8 max-sm:gap-y-2 ">
-                            <img src="./S1.png" alt="" class="max-sm:w-12">
+                            <img src="./Images/S1.png" alt="" class="max-sm:w-12">
                             <h2 class="text-[18px] font-bold leading-6 max-sm:text-[12px]">CONTENT MANAGEMENT SYSTEM</h2>
                             <p class="text-[13px]">Cras quis lectus sit amet quam <br> imperdiet luctus. Sed nulla nisi, <br> convallis sed lorem ut.</p>
                             <button class="text-[#00a651] text-[12px] font-semibold">READ MORE</button>
@@ -172,25 +177,27 @@
             </div>
         </div>
 
-        <div class="container3 bg-[url('./pic3.png')] bg-cover bg-center mt-[-7rem] flex flex-col relative z-[-99]  max-sm:w-full max-sm:h-[328px] max-sm:bg-[100% 100%] max-sm:mt-[-2.4rem] max-sm:h-[624px]">
+        <div class="container3 bg-cover bg-center mt-[-7rem] flex flex-col relative z-[-99] max-sm:bg-[100% 100%] max-sm:mt-[-2.4rem]">
             <div class="content flex justify-center">
-                <div class="w-[1172px] max-sm:w-[293px] max-md:w-[680px] max-lg:w-[930px]">
+                <div class="container">
 
                     <div class="heading text-center mt-52 max-sm:mt-16 max-md:mt-36">
-                        <h4 class=" text-[24px] text-[#fff] leading-[0] max-sm:text-[18px]">OUR</h4>
-                        <h4 class="text-[#c11fec] font-bold text-[42px] max-sm:text-[24px]">PORTFOLIO</h4>
+                        <h4 class=" text-[24px] text-[#fff] leading-[0] max-sm:text-[18px] our-h">OUR</h4>
+                        <h4 class="text-[#c11fec] font-bold text-[42px] max-sm:text-[24px] port-h">PORTFOLIO</h4>
                     </div>
 
-                    <div class="portfolio flex justify-between mt-[43px] max-sm:flex-col max-sm:gap-y-6 max-md:flex-col max-md:gap-y-6 max-md:items-center ">
-                        <div class="portfolio1 w-[570px] h-[382px] relative flex justify-center left-0 right-0 max-sm:w-[285px] max-sm:h-[191px] max-md:w-[450px] max-md:h-[280px]">
-                            <img src="./portfolio1.png" alt="">
-                            <div class="shape w-[96.5%] h-20 bg-black bg-opacity-80 absolute bottom-0 flex justify-center items-center">
+                    <div class="portfolio flex justify-between mt-[43px] flex-wrap max-md:items-center max-lg:flex-col max-lg:gap-y-4 max-lg:items-center">
+
+                        <div class="portfolio1 relative flex justify-center left-0 right-0 max-sm:w-[50%] max-md:w-[60%]">
+                            <img src="./Images/portfolio1.png" alt="">
+                            <div class="shape w-[96.5%] h-20 max-md:h-14 bg-black bg-opacity-80 absolute bottom-0 flex justify-center items-center">
                                 <p class="text-[22px] font-bold text-white text-center max-sm:text-[18px]">CITY BUSINESS CENTER</p>
                             </div>
                         </div>
-                        <div class="portfolio2 w-[570px] h-[382px] relative flex justify-center left-0 right-0 max-sm:w-[285px] max-sm:h-[191px] max-md:w-[450px] max-md:h-[280px]">
-                            <img src="./portfolio2.png" alt="">
-                            <div class="shape w-[96.5%] h-20 bg-black bg-opacity-80 absolute bottom-0 flex justify-center items-center">
+
+                        <div class="portfolio2 relative flex justify-center left-0 right-0 max-sm:w-[50%] max-md:w-[60%]">
+                            <img src="./Images/portfolio2.png" alt="">
+                            <div class="shape w-[96.5%] h-20 max-md:h-14 bg-black bg-opacity-80 absolute bottom-0 flex justify-center items-center">
                                 <p class="text-[22px] font-bold text-white text-center max-sm:text-[18px]">EMOTIVE AUTOMOBILES</p>
                             </div>
                         </div>
@@ -207,16 +214,16 @@
             </div>
         </div>
 
-        <div class="container4 bg-[url('./pic4.png')] bg-cover bg-center mt-[-7rem] flex flex-col relative z-[-999] max-sm:w-full max-sm:h-[328px] max-sm:bg-[100% 100%] max-sm:mt-[-2.4rem] max-sm:h-[600px]">
+        <div class="container4 bg-[url('./Images/pic4.png')] bg-cover bg-center mt-[-7rem] flex flex-col relative z-[-999] max-sm:w-full max-sm:h-[328px] max-sm:bg-[100% 100%] max-sm:mt-[-2.4rem] max-sm:h-[600px] ">
             <div class="content flex justify-center">
-                <div class="w-[1172px] max-sm:w-[293px] max-md:w-[680px] max-lg:w-[930px]">
+                <div class="container">
 
                     <div class="heading text-center mt-52 max-sm:mt-16 max-md:mt-40">
-                        <h4 class=" text-[24px] text-[#000] leading-[0] max-sm:text-[18px]">ABOUT</h4>
-                        <h4 class="text-[#c11fec] font-bold text-[42px] max-sm:text-[24px]">WEBSITE OUTSOURCING</h4>
+                        <h4 class=" text-[24px] text-[#000] leading-[0] max-sm:text-[18px] about">ABOUT</h4>
+                        <h4 class="text-[#c11fec] font-bold text-[42px] max-sm:text-[24px] web">WEBSITE OUTSOURCING</h4>
                     </div>
-                    <div class="content text-center mt-[43px] mb-[30rem] max-sm:mt-[20px]">
-                        <P class="max-sm:text-xs">Website Outsourcing™ is an offshore outsourcing company  providing quality and professional web design, web development and software <br> development services to English-speaking customers from all over the world.   Regardless of your location - North America, Europe or Australia, <br> Website Outsourcing can help. </P>
+                    <div class="content paragraph text-center mt-[43px] mb-[30rem] max-sm:mt-[20px] max-sm:mb-0">
+                        <P class="max-sm:text-xs ">Website Outsourcing™ is an offshore outsourcing company  providing quality and professional web design, web development and software <br class="hidden"> development services to English-speaking customers from all over the world. Regardless of your location - North America, Europe or Australia, <br class="hidden"> Website Outsourcing can help. </P>
 
                         <button class="text-[#c11fec] rounded-full border border-[#c11fec] py-1 px-6 mt-[33px] max-sm:px-4">READ MORE</button>
                     </div>
@@ -226,32 +233,34 @@
         </div>
 
 
-        <div class="container5 w-full h-[380px] bg-[#252525] mt-[-7rem] flex flex-col relative z-[-9999]  max-sm:w-full max-sm:h-[258px] max-sm:bg-[100% 100%] max-sm:mt-[-4.4rem]">
+        <div class="container5 h-[380px] bg-[#252525] mt-[-7rem] flex flex-col relative z-[-9999]  max-sm:w-full max-sm:h-auto max-sm:bg-[100% 100%] max-sm:mt-[-4.4rem] max-lg:h-full">
             <div class="content flex justify-center">
 
-                <div class="w-[1172px] max-sm:w-[380px] max-md:w-[680px] max-lg:w-[930px]">
+                <div class="container">
 
                     <div class="logos flex justify-evenly mt-48 max-sm:flex-wrap max-sm:justify-center max-sm:mt-24 max-sm:gap-y-5 max-sm:gap-x-6 max-md:flex-wrap max-md:justify-center max-md:mt-24 max-md:gap-y-5 max-md:gap-x-6 max-md:mt-40 ">
-                        <img src="./logo1.png" alt="" class="w-[20%]">
-                        <img src="./logo2.png" alt="" class="w-[20%]">
-                        <img src="./logo3.png" alt="" class="w-[20%]">
+                        <img src="./Images/logo1.png" alt="">
+                        <img src="./Images/logo2.png" alt="">
+                        <img src="./Images/logo3.png" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="line border-b-2 border-[#363636] w-full mt-12 mb-6 max-sm:mb-2 max-md:mt-6"></div>
 
-            <div class="list text-white flex justify-center max-sm:hidden max-md:hidden">
-                <div class=" w-[1172px] max-lg:w-[930px]">
+            <div class="list text-white flex justify-center max-sm:hidden max-md:hidden max-lg:hidden">
+                <div class="container">
                     <ul class="flex justify-center gap-x-[5.4rem] max-lg:gap-x-[3.2rem]">
                        <li><a href="#" class="text-[#c11fec]">Home</a></li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">About us</a></li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">Services</a> </li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">Portfolio</a> </li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">About OutSourcing</a> </li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">Price</a> </li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">Templates</a> </li>
-                       <li> <a href="#" class="hover:text-[#c11fec]">Designing</a> </li>
+                       <li><a href="#" class="hover:text-[#c11fec]">About us</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Services</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Portfolio</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">About OutSourcing</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Price</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Templates</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Designing</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Development</a></li>
+                       <li><a href="#" class="hover:text-[#c11fec]">Contact us</a></li>
                     </ul>
                 </div>
             </div>
@@ -260,11 +269,12 @@
         </div>
 
         <footer class="bg-[#111111] w-full h-[63px] max-sm:w-full max-sm:bg-[100% 100%]">
-            <p class="text-white text-center pt-6 max-sm:text-[10px]">Copyrights© 2016 <span class="text-[#c11fec]">Website Outsourcing.com</span>,  All Rights Reserved, Website Design By <span class="text-[#c11fec]">PNT Global</span></p>
+            <p class="text-white text-center pt-6 max-sm:text-[10px] max-md:text-[12px]">Copyrights© 2016 <span class="text-[#c11fec]">Website Outsourcing.com</span>,  All Rights Reserved, Website Design By <span class="text-[#c11fec]">PNT Global</span></p>
         </footer>
 
 
     </div>
+
     <script>
         let icon = document.querySelector(".fa-bars");
         let list = document.querySelector(".relist");
@@ -284,6 +294,7 @@
 
 
     </script>
+
 </body>
 
 </html>
